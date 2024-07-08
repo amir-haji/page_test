@@ -1,0 +1,108 @@
+/* Styles for Static Frontend App */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+main section {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+form {
+    margin-top: 1em;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
